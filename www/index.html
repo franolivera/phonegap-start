@@ -31,18 +31,18 @@
     <script>
     $(document).ready(function() {
  
-        $("#testLink").click(function(e) {
+        $("#fran").click(function(e) {
             e.preventDefault();
             // Un mensaje de estado
             $("#resultBlock").html("Obteniendo los datos - esperando...");
             // Hacemos un peticion web y obtenemos la data
             $.get("http://php.fwm.com.es/echo.php", {}, function(data) {
                 // Cargamos la data dentro de la etiqueta p
-                $("#resultBlock").html(data);
+                $("#resultB").html(data);
             })
         });
         
-        $("#fran").click(function(){
+        $("#frann").click(function(){
             alert ('holasss');
         })
  
