@@ -26,6 +26,22 @@
         <title>Hello World</title>
     </head>
     <body>
+    <script>
+    $(document).ready(function() {
+ 
+        $("#testLink").click(function(e) {
+            e.preventDefault();
+            // Un mensaje de estado
+            $("#resultBlock").html("Obteniendo los datos - esperando...");
+            // Hacemos un peticion web y obtenemos la data
+            $.get("http://192.168.1.9/comentarios/hola.php", {}, function(data) {
+                // Cargamos la data dentro de la etiqueta p
+                $("#resultBlock").html(data);
+            })
+        });
+ 
+    });
+    </script>
         <div class="app">
             <h1>PhoneGap</h1>
             <div id="deviceready" class="blink">
