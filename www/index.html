@@ -36,7 +36,7 @@
             // Un mensaje de estado
             $("#resultBlock").html("Obteniendo los datos - esperando...");
             // Hacemos un peticion web y obtenemos la data
-            $.get("http://192.168.1.9/comentarios/hola.php", {}, function(data) {
+            $.get("http://php.fwm.com.es/echo.php", {}, function(data) {
                 // Cargamos la data dentro de la etiqueta p
                 $("#resultBlock").html(data);
             })
@@ -59,10 +59,11 @@
         <a id="testLink" rel="external">Obtener la data</a>
         <div data-role="collapsible">
             <h3>Resultado: </h3>
-            <p id="resultBlock">kjhkashdaksjhdskajhd</p>
+            <p id="resultBlock"></p>
             
         </div>
         <button id="fran">Click Aqui</button>
+        <p id="resultB"></p>
     </div>
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
